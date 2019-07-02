@@ -1,0 +1,17 @@
+.full-taste{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .full-taste__content{
+       width: 50%; 
+    }
+    .full-taste__title{
+        margin-bottom: 30px;
+    }
+    .full-taste__text{
+        margin-bottom: 30px;
+    }
+}
+.full-taste_margin{
+    margin-top: 60px;
+}

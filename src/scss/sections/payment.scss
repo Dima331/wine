@@ -1,0 +1,23 @@
+.payment{
+    &.payment_margin{
+        margin-top: 60px;
+    }
+    .payment__content{
+        width: 50%;
+    }
+    .payment__title{
+        margin-bottom: 30px;
+    }
+    .payment__step-list{
+        margin-bottom: 30px;
+    }
+    .payment__choice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .payment__btn{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,48 @@
+.step-list{
+    counter-reset: myCounter;
+    .step-list__item{
+        padding-left: 55px;
+        list-style: none;
+        position: relative;
+        margin-bottom: 20px;
+        &:before {
+            counter-increment: myCounter;
+            content:counter(myCounter);
+            color: #000;
+            text-align: center;
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            border: 2px solid #000000;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    }
+}
+
+// ol{
+//     counter-reset: myCounter;
+//   }
+  
+//   li{
+//     list-style: none;
+//   }
+  
+//   li:before {
+//     counter-increment: myCounter;
+//     content:counter(myCounter);
+//     color: white;
+//     background: #2980B9;
+//     display: inline-block;
+//     text-align: center;
+//     margin: 5px 10px;
+//     line-height: 40px;
+//     width: 40px;
+//     height: 40px;
+//   }

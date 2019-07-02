@@ -1,12 +1,12 @@
 .container {
-    width: 940px;
+    width: 1170px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    @include lView {
-        width: 94%;
-        margin: 0 auto;
-    }
+    // @include lView {
+    //     width: 94%;
+    //     margin: 0 auto;
+    // }
 }
 
 .wrapper {
@@ -15,4 +15,5 @@
     //min-height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }

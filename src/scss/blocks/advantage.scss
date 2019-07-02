@@ -1,0 +1,17 @@
+.advantage{
+    .advantage__item{
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #BD0D0D;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            border-radius: 50%;
+        }
+    }
+}

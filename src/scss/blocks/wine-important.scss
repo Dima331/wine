@@ -1,0 +1,19 @@
+.wine-important{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .wine-important__title{
+        font-size: 30px;
+        color: #04081C;
+    }
+    .wine-important__kind{
+        color: #585858;
+        font-size: 14px;
+    }
+    .wine-important__price{
+        display: flex;
+        align-items: center;
+        min-width: 50px;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,17 @@
+.wine{
+    width: 370px;
+    margin-right: 30px;
+    &:last-child{
+        margin-right: 0;
+    }
+    .wine__img{
+        width: 370px;
+        height: 462px;
+        background-color: #ff5;
+    }
+    .wine__info{
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

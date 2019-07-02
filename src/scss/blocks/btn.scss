@@ -1,0 +1,27 @@
+.btn{
+    border: 2px solid #BD0D0D;
+    border-radius: 3px;
+    padding: 10px 76px;
+    display: inline-block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    &.btn-disabled{
+        border: 2px solid #C4C4C4;
+        color: #A7A7A7;
+        pointer-events: none; 
+        cursor: default;
+    }
+    &:hover{
+        background: #BD0D0D;
+        border: 2px solid #BD0D0D;
+        color: #fff;
+    }
+    &:focus{
+        background: #BD0D0D;
+        padding: 12px 78px;
+        border: 0;
+        color: #fff;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+    }
+}

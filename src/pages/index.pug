@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ru')
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -8,6 +8,13 @@ html(lang='en')
     title CHOCCO
   body.body
     .wrapper
+      .container
+        include sections/header.pug 
+        include sections/main.pug 
+        include sections/full-taste.pug 
+        include sections/for-whom.pug 
+        include sections/wines.pug 
+        include sections/payment.pug
     script(type="text/javascript" src="js/main.min.js")
 
 

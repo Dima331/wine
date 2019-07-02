@@ -25,7 +25,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "AlegreyaSans", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,17 +42,9 @@ html {
   height: 100%;
   font-size: 1rem;
   font-weight: 600;
-
-  /*@include mView {
-    font-size: 0.8rem;
-  }
-
-  @include sView {
-    font-size: 0.6rem;
-  }*/
 }
 
-ul {
+ul,ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -76,13 +68,7 @@ img {
 }
 
 section {
-  height: 100vh;
-  padding: 40px 0;
-
-  @include mView {
-    height: 100%;
-    padding: 70px 0;
-  }
+  height: 100%;
 }
 
 a {
@@ -91,76 +77,73 @@ a {
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 60px;
-  text-transform: uppercase;
+  color: #04081C;
+  font-size: 74px;
+  font-weight: 900;
+  line-height: 1;
+  // @include sView {
+  //   font-size: 48px;
+  //   line-height: 0.85;
+  // }
 
-  @include sView {
-    font-size: 48px;
-    line-height: 0.85;
-  }
-
-  @include ssView {
-    font-size: 42px;
-  }
+  // @include ssView {
+  //   font-size: 42px;
+  // }
 }
 
 h2 {
-  color: #0d0d0d;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
+  color: #04081C;
+  font-size: 62px;
+  font-weight: 800;
+
   line-height: 1;
-  @include sView {
-    font-size: 40px;
-  }
+  // @include sView {
+  //   font-size: 40px;
+  // }
 }
 
-h3{
-  color: #0d0d0d;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.2;
-  @include mView {
-    font-size: 30px;
-  }
-  @include ssView {
-    font-size: 24px;
-  }
-}
-h4 {
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 1;
-}
+// h3{
+//   color: #0d0d0d;
+//   font-size: 36px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   line-height: 1.2;
+//   @include mView {
+//     font-size: 30px;
+//   }
+//   @include ssView {
+//     font-size: 24px;
+//   }
+// }
+// h4 {
+//   font-size: 27px;
+//   font-weight: 700;
+//   line-height: 1;
+// }
 
 
 p {
   font-size: 18px;
-  color: #666666;
-  line-height: 1.2;
+  color: #04081C;
 
-  @include ssView {
-    font-size: 16px;
-  }
+  // @include ssView {
+  //   font-size: 16px;
+  // }
 }
 
-button {
-  color: #0f5a47;
-  font-family: "AlegreyaSans";
-  font-size: 19px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #fff;
-  padding: 19px 35px;
-  border-radius: 45px;
-  border: 0;
-  box-shadow: -2px 3px 10px 1px #0000003b;
-  cursor: pointer;
-  &:focus {
-    outline: none;
-  }
-}
+// button {
+//   color: #0f5a47;
+//   font-family: "AlegreyaSans";
+//   font-size: 19px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   background-color: #fff;
+//   padding: 19px 35px;
+//   border-radius: 45px;
+//   border: 0;
+//   box-shadow: -2px 3px 10px 1px #0000003b;
+//   cursor: pointer;
+//   &:focus {
+//     outline: none;
+//   }
+// }
