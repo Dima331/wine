@@ -1,0 +1,166 @@
+@mixin ssView {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin sView {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mView {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin lView {
+  @media only screen and (max-width: 950px) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AlegreyaSans", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+
+  /*@include mView {
+    font-size: 0.8rem;
+  }
+
+  @include sView {
+    font-size: 0.6rem;
+  }*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+h3,
+h1,
+h2,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  height: 100vh;
+  padding: 40px 0;
+
+  @include mView {
+    height: 100%;
+    padding: 70px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  @include sView {
+    font-size: 48px;
+    line-height: 0.85;
+  }
+
+  @include ssView {
+    font-size: 42px;
+  }
+}
+
+h2 {
+  color: #0d0d0d;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  @include sView {
+    font-size: 40px;
+  }
+}
+
+h3{
+  color: #0d0d0d;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  @include mView {
+    font-size: 30px;
+  }
+  @include ssView {
+    font-size: 24px;
+  }
+}
+h4 {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.2;
+
+  @include ssView {
+    font-size: 16px;
+  }
+}
+
+button {
+  color: #0f5a47;
+  font-family: "AlegreyaSans";
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 19px 35px;
+  border-radius: 45px;
+  border: 0;
+  box-shadow: -2px 3px 10px 1px #0000003b;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}

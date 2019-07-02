@@ -1,0 +1,18 @@
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @include lView {
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+    //min-width: 1100px;
+    //min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
