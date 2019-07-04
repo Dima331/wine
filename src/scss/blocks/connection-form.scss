@@ -1,0 +1,27 @@
+.connection-form{
+    .connection-form__input{
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        font-size: 16px;
+        padding: 5px 0;
+        &::placeholder{
+            color: #C4C4C4;
+        }
+        
+    }
+    .connection-form__top{
+        margin-bottom: 30px;
+    }
+    .connection-form__bottom{
+        display: flex;
+        justify-content: center;
+    }
+    .connection-form__col{
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

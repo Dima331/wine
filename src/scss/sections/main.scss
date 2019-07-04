@@ -1,28 +1,43 @@
 .main {
     color: #04081C;
-
-    .main__content {
-        width: 50%;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 991px;
+        height: 854px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -93px;
+        right: -376px;
+        background-image: url("/img/pic/bg-section-main.png");
+    
     }
-    .main__title{
-        margin-bottom: 10px;
+    .main__content {
+        width: 51%;
+    }
+    .main__title {
+        margin-bottom: 13px;
     }
     .main__alcohol {
         color: #fff;
         background: #BD0D0D;
         border-radius: 3px;
         display: inline-block;
-        padding: 10px 18px;
+        padding: 8px 16px;
         line-height: 1;
         font-weight: 800;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        font-size: 24px;
     }
-
     .main__text {
         font-size: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        line-height: 1.35;
     }
 }
-.main_margin{
-    margin-top: 60px;
+
+.main_padding {
+    padding-top: 75px;
+    padding-bottom: 30px;
 }

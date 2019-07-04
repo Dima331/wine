@@ -1,4 +1,18 @@
 .payment{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 632px;
+        height: 923px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 60%;
+        transform: translateY(-50%);
+        right: -112px;
+        background-image: url("/img/pic/bg-section-payment.png");
+    
+    }
     &.payment_margin{
         margin-top: 60px;
     }
@@ -20,4 +34,9 @@
     .payment__btn{
         margin-bottom: 10px;
     }
+}
+
+.payment_padding{
+    padding-top: 96px;
+    padding-bottom: 30px;
 }

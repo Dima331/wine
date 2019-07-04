@@ -1,27 +1,45 @@
-.btn{
+.btn {
     border: 2px solid #BD0D0D;
     border-radius: 3px;
-    padding: 10px 76px;
+    padding: 10px 74px;
     display: inline-block;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
-    &.btn-disabled{
+    &.btn-disabled {
         border: 2px solid #C4C4C4;
         color: #A7A7A7;
-        pointer-events: none; 
+        pointer-events: none;
         cursor: default;
     }
-    &:hover{
+    &:hover {
         background: #BD0D0D;
         border: 2px solid #BD0D0D;
         color: #fff;
     }
-    &:focus{
+    &:focus {
         background: #BD0D0D;
-        padding: 12px 78px;
+        padding: 12px 76px;
         border: 0;
         color: #fff;
         box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
     }
+}
+.btn-form{
+    border: 2px solid #68B916;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+        background: #68B916;
+        border: 2px solid #68B916;
+        color: #fff;
+    }
+    &:focus {
+        background: #68B916;
+        padding: 12px 76px;
+        border: 0;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+        outline: 0;
+    }
+
 }

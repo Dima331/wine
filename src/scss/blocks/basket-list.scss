@@ -1,0 +1,39 @@
+.basket-item__left{
+    width: 132px;
+}
+.basket-item__right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+a.basket-item__del{
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        text-indent: -9999px;
+        background-image:none;
+        //opacity: 0.3;
+        &:before, &:after {
+            position: absolute;
+            left: 10px;
+            content: ' ';
+            height: 13px;
+            width: 2px;
+            background-color: #000;
+            border-radius: 1px;
+          }
+          &:before {
+            transform: rotate(45deg);
+          }
+          &:after {
+            transform: rotate(-45deg);
+          }
+        //   &:hover {
+        //     opacity: 1;
+        //   }
+    
+}

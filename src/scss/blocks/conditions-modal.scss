@@ -1,0 +1,41 @@
+.modal {
+    display: none;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    max-width: 758px;
+    box-sizing: border-box;
+    width: 758px;
+    background: #fff;
+    padding: 55px 63px;
+    box-shadow: none;
+    border-radius: 0;
+}
+.modal a.close-modal {
+    position: absolute;
+    display: block;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background-image:none;
+    opacity: 0.3;
+    &:before, &:after {
+        position: absolute;
+        left: 10px;
+        content: ' ';
+        height: 20px;
+        width: 1px;
+        background-color: #333;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        opacity: 1;
+      }
+}

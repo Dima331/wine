@@ -1,3 +1,30 @@
-.logo{
-    margin-right: 40px;
+.logo {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    .logo__name-text{
+        font-weight: 900;
+        font-size: 17.5px;
+        letter-spacing: 7.9px;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        position: relative;
+        &:before{
+            content: "";
+            width:7px;
+            height:7px;
+            background: #BD0D0D;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 41%;
+            transform: translateY(-50%);
+        }
+    }
+    .logo__tagline{
+        font-size: 16.6px;
+        color: #A7A7A7;
+        font-weight: 300;
+    }
+
 }

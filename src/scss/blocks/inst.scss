@@ -1,0 +1,22 @@
+.inst{
+    display: inline-flex;
+    .inst__text {
+        color: #a7a7a7;
+        font-size: 12px;
+        position: relative;
+        margin-left: 5px;
+    }
+    .inst__icon{
+        fill:#C4C4C4;
+        border-radius: 2px;
+    }
+    &:hover{
+        .inst__text{
+            color: #BD0D0D;
+        }
+        
+        .inst__icon{
+            fill:#BD0D0D;
+        }
+    }
+}

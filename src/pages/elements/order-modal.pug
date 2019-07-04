@@ -1,0 +1,80 @@
+.order-modal.modal#ex2
+    .order-modal__content
+        .order-modal__title Ваш заказ
+        ul.basket-list
+            li.basket-list__item.basket-item
+                .basket-item__left
+                    img(src="img/wines/2.png", alt="")
+                .basket-item__right
+                    .basket-item__info-left
+                        .basket-item__title Rosso
+                        .basket-item__kind Безалкогольное красное вино
+                        .basket-item__magnitude
+                            .basket-item__volume 750 мл
+                            .basket-item__quantity.count-quantity
+                                button.count-quantity__minus -
+                                .count-quantity__number 1
+                                button.count-quantity__plus +
+                            .basket-item__price 30 BYN    
+                    .basket-item__info-right
+                a().basket-item__del
+        .basket-totals.basket-totals_margin
+            .basket-totals__row.courier
+                .basket-totals__text Доставка курьером
+                .basket-totals__price + 5 BYN
+            .basket-totals__row.order-price
+                .basket-totals__text Сумма заказа
+                .basket-totals__price 180 BYN
+            .basket-totals__row.total-price
+                .basket-totals__text Итого
+                .basket-totals__price 185 BYN
+
+            .basket-totals__free-delivery Бесплатная доставка при покупке от 60 BYN
+        
+        form.payment-form
+            .payment-form__title Оформление заказа 
+            .payment-form__col
+                .payment-form__subtitle Личные данные 
+                .payment-form__row
+                    .payment-form__input
+                        label(for="name") Имя*
+                        input(type="text" plesholder="df")
+                    .payment-form__tel
+                        label(for="name")
+                        input(type="text" plesholder="df")
+            .payment-form__col
+                .payment-form__subtitle Тип заказа
+                .payment-form__row
+                    .payment-form__input_radio
+                        label(for="q")
+                        input(type="radio", name="q")
+                    .payment-form__input_radio
+                        label(for="q")
+                        input(type="radio", name="q")
+            .payment-form__col
+                .payment-form__row
+                    .payment-form__input
+                        label(for="name") Имя*
+                        input(type="text" plesholder="df")
+                    .payment-form__tel
+                        label(for="name")
+                        input(type="text" plesholder="df")
+                .payment-form__row
+                    .payment-form__input
+                        label(for="name") Имя*
+                        input(type="text" plesholder="df")
+                    .payment-form__tel
+                        label(for="name")
+                        input(type="text" plesholder="df")
+                        .payment-form__input
+                        label(for="name") Имя*
+                        input(type="text" plesholder="df")
+                    .payment-form__tel
+                        label(for="name")
+                        input(type="text" plesholder="df")
+                    .payment-form__input
+                        label(for="name") Имя*
+                        input(type="text" plesholder="df")
+ 
+
+

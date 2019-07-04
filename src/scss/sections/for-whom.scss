@@ -1,5 +1,18 @@
 .for-whom{
-    margin-top: 60px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 591px;
+        height: 854px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -112px;
+        background-image: url("/img/pic/bg-section-for.png");
+    
+    }
     .for-whom__content{
         width: 50%;
     }
@@ -11,5 +24,10 @@
     }
     .for-whom__advantage{
         margin-bottom: 30px;
+        padding-left: 30px;
     }
+}
+.for-whom_paddig{
+    padding-top: 96px;
+    padding-bottom: 30px;
 }

@@ -1,12 +1,15 @@
 .contact {
-    .contact__tel-link {
-        color: #585858;
-        font-size: 19px;
-        font-weight: 700;
+  line-height: 1;
+  .contact__tel-link {
+    color: #585858;
+    font-size: 19px;
+    font-weight: 700;
+    &:hover {
+      color: #2e2e2e;
     }
-
-    .contact__inst-link {
-        color: #a7a7a7;
-        font-size: 12px;
-    }
+  }
+  .contact__tel{
+    margin-bottom: 4px;
+    margin-top: -3px;
+  }
 }

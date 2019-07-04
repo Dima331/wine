@@ -1,17 +1,34 @@
-.full-taste{
+.full-taste {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    .full-taste__content{
-       width: 50%; 
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 591px;
+        height: 854px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 60%;
+        transform: translateY(-50%);
+        left: -112px;
+        background-image: url("/img/pic/bg-section-full.png");
+    
     }
-    .full-taste__title{
-        margin-bottom: 30px;
+    .full-taste__content {
+        width: 50%;
     }
-    .full-taste__text{
+    .full-taste__title {
+        margin-bottom: 47px;
+    }
+    .full-taste__text {
         margin-bottom: 30px;
+        line-height: 1.5;
     }
 }
-.full-taste_margin{
-    margin-top: 60px;
+
+.full-taste_padding {
+    padding-top: 96px;
+    padding-bottom: 30px;
 }
