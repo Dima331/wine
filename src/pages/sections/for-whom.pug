@@ -6,21 +6,20 @@
                 'img/icons/pregnant.svg', 
                 'img/icons/bussines.svg', 
                 'img/icons/islam.svg']
-
-
-section.for-whom.for-whom_paddig
-    .for-whom__content
-        h2.for-whom__title Для кого наш продукт?
-        ul.for-whom__advantage-icon.advantage-icon
-            each val in icons
-                li.advantage-icon__item
-                    img(src=val, alt="icon")
-        p.for-whom__text Безалкогольное вино — идеальный выбор для: 
-        ul.for-whom__advantage.advantage
-            li.advantage__item спортсменов и соблюдающих диету; 
-            li.advantage__item автолюбителей; 
-            li.advantage__item принимающих лекарства, не совместимые с алкоголем; 
-            li.advantage__item беременных и кормящих женщин;
-            li.advantage__item участников семинаров и бизнес-ланчей; 
-            li.advantage__item употребляющих продукты "Халяль".
-        a(href="#order").for-whom__btn.btn-buy Заказать вино
+section.for-whom
+    .container.for-whom__container
+        .for-whom__content
+            h2.for-whom__title Для кого #[br/]наш продукт?
+            ul.for-whom__advantage-icon.advantage-icon
+                each val in icons
+                    li.advantage-icon__item
+                        img(src=val, alt="icon")
+            p.for-whom__text Безалкогольное вино — идеальный выбор для: 
+            ul.for-whom__advantage.advantage
+                li.advantage__item спортсменов и соблюдающих диету; 
+                li.advantage__item автолюбителей; 
+                li.advantage__item принимающих лекарства, не совместимые с алкоголем; 
+                li.advantage__item беременных и кормящих женщин;
+                li.advantage__item участников семинаров и бизнес-ланчей; 
+                li.advantage__item употребляющих продукты "Халяль".
+            a(href="#order").for-whom__btn.btn-buy.order Заказать вино

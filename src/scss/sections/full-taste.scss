@@ -1,34 +1,38 @@
 .full-taste {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  padding-top: 96px;
+  z-index: 3;
+  .full-taste__content {
+    width: 579px;
+  }
+  .full-taste__container {
+    align-items: flex-end;
     position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        width: 591px;
-        height: 854px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 60%;
-        transform: translateY(-50%);
-        left: -112px;
-        background-image: url("/img/pic/bg-section-full.png");
-    
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 904px;
+      height: 1073px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 48%;
+      transform: translateY(-50%);
+      left: -32%;
+      background-image: url("/img/pic/bg-section-full.png");
     }
-    .full-taste__content {
-        width: 50%;
-    }
-    .full-taste__title {
-        margin-bottom: 47px;
-    }
-    .full-taste__text {
-        margin-bottom: 30px;
-        line-height: 1.5;
-    }
+  }
+
+  .full-taste__content p {
+    line-height: 1.5;
+  }
+
+  .full-taste__title {
+    margin-bottom: 47px;
+  }
+
+  .full-taste__text {
+    margin-bottom: 30px;
+  }
 }
 
-.full-taste_padding {
-    padding-top: 96px;
-    padding-bottom: 30px;
-}

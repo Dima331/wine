@@ -1,0 +1,19 @@
+.header {
+    margin: 28px 0;
+    width: 100%;
+    .header__container{
+       display: flex; 
+       flex-direction: row;
+    }
+    .header__logo{
+        margin-right: 93px;
+    }
+    .header__contact{
+        line-height: 1;
+        .contact{
+            margin-bottom: 4px;
+            margin-top: -3px;
+        }
+        
+    }
+}

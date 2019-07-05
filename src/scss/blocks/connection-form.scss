@@ -12,16 +12,33 @@
         
     }
     .connection-form__top{
-        margin-bottom: 30px;
+        margin-bottom: 48px;
     }
     .connection-form__bottom{
         display: flex;
         justify-content: center;
     }
     .connection-form__col{
-        margin-bottom: 15px;
+        margin-bottom: 16px;
+        position: relative;
         &:last-child{
             margin-bottom: 0;
         }
+    }
+
+    .connection-form__input~.focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #4caf50;
+        transition: 0.4s;
+    }
+    
+    .connection-form__input:focus~.focus-border {
+        width: 100%;
+        transition: 0.4s;
+        left: 0;
     }
 }

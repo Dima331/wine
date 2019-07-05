@@ -72,20 +72,20 @@ gulp.task('pug', () => {
 
 gulp.task("scripts", () => {
     return gulp.src(lib)
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(concat('main.min.js', { newLine: ";" }))
         //.pipe(babel({
         //    presets: ['@babel/env']
         //}))
         //.pipe(uglify())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/js'))
         .pipe(reload({ stream: true }))
 });
 
 gulp.task('sass', () => {
     return gulp.src(style)
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(concat('main.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
@@ -100,7 +100,7 @@ gulp.task('sass', () => {
             cascade: true
         }))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
         .pipe(reload({ stream: true }))
 });

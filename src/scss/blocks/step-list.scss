@@ -1,10 +1,14 @@
 .step-list{
     counter-reset: myCounter;
+    width: 450px;
     .step-list__item{
-        padding-left: 55px;
+        padding-left: 65px;
         list-style: none;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
+        &:last-child{
+            margin-bottom: 0;
+        }
         &:before {
             counter-increment: myCounter;
             content:counter(myCounter);
@@ -22,6 +26,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: 800;
           }
     }
 }

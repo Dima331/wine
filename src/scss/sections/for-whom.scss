@@ -1,33 +1,55 @@
-.for-whom{
+.for-whom {
+  padding-top: 79px;
+  .for-whom__container {
     position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        width: 591px;
-        height: 854px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -112px;
-        background-image: url("/img/pic/bg-section-for.png");
-    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 990px;
+      height: 1239px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 42%;
+      transform: translateY(-50%);
+      right: -31%;
+      background-image: url("/img/pic/bg-section-for.png");
     }
-    .for-whom__content{
-        width: 50%;
-    }
-    .for-whom__title{
-        margin-bottom: 30px;
-    }
-    .for-whom__advantage-icon{
-        margin-bottom: 30px;
-    }
-    .for-whom__advantage{
-        margin-bottom: 30px;
-        padding-left: 30px;
-    }
+  }
+
+  .for-whom__content {
+    width: 43%;
+  }
+  .for-whom__title {
+    margin-bottom: 42px;
+  }
+  .for-whom__advantage-icon {
+    margin-bottom: 57px;
+  }
+  .for-whom__advantage {
+    padding: 30px 0 30px 13px;
+    font-size: 18px;
+  }
 }
-.for-whom_paddig{
-    padding-top: 96px;
-    padding-bottom: 30px;
+.for-whom{
+    ul.advantage{
+        padding: 30px 0 30px 13px;
+        font-size: 18px;
+        li{
+            padding-left: 14px;
+            margin-bottom: 6px;
+            position: relative;
+            &::before{
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: #BD0D0D;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+    }
+
 }

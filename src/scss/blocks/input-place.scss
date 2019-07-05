@@ -1,0 +1,119 @@
+.input-place {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  .input-place__label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: #fff;
+  }
+  .input-place__text {
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #c4c4c4;
+    font-size: 14px;
+  }
+}
+
+.radio {
+    cursor: pointer;
+    position: relative;
+    flex: none;
+    display: flex;
+  
+    .radio__text:before {
+      content: " ";
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border: 1px solid red;
+      border-radius: 2px;
+    }
+  }
+  
+  .radio__input:checked ~ .radio__text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4.5px;
+    background-image: url("../img/icons/check.svg");
+    border-radius: 75%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 9px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .radio__text {
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+  }
+
+
+
+
+
+
+//   select, option {
+//     border: 0;
+//     border-bottom-color: #fff;
+//     border-left-color: #fff;
+//       &:focus{
+//         outline:0;
+//         border: 0;
+//       }
+//   }
+.select-wrapper{
+        position: relative;
+        display: inline-block;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 47%;
+        transform: translateY(-50%) rotate(45deg);
+        right: 8px;
+        //background-color: #A7A7A7;
+        border-bottom: 1px solid #A7A7A7;
+        border-right: 1px solid #A7A7A7;
+    }
+}
+select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+
+
+  
+
+select {
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #c4c4c4;
+    font-size: 14px;
+    line-height: 1;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 150px;
+}

@@ -1,43 +1,34 @@
 .main {
-    color: #04081C;
+  color: #04081c;
+  z-index: 4;
+  .main__container {
     position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        width: 991px;
-        height: 854px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: -93px;
-        right: -376px;
-        background-image: url("/img/pic/bg-section-main.png");
-    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 991px;
+      height: 854px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: -33%;
+      right: -32%;
+      top: -169px;
+      right: -377px;
+      background-image: url("/img/pic/bg-section-main.png");
     }
-    .main__content {
-        width: 51%;
+  }
+  .main__content {
+    width: 51%;
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      line-height: 1.35;
     }
-    .main__title {
-        margin-bottom: 13px;
-    }
-    .main__alcohol {
-        color: #fff;
-        background: #BD0D0D;
-        border-radius: 3px;
-        display: inline-block;
-        padding: 8px 16px;
-        line-height: 1;
-        font-weight: 800;
-        margin-bottom: 50px;
-        font-size: 24px;
-    }
-    .main__text {
-        font-size: 24px;
-        margin-bottom: 40px;
-        line-height: 1.35;
-    }
-}
-
-.main_padding {
-    padding-top: 75px;
-    padding-bottom: 30px;
+  }
+  .main__title {
+    margin-bottom: 13px;
+  }
+  .main__alcohol {
+    margin-bottom: 50px;
+  }
 }

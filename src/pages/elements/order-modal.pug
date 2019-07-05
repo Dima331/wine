@@ -36,45 +36,58 @@
             .payment-form__col
                 .payment-form__subtitle Личные данные 
                 .payment-form__row
-                    .payment-form__input
-                        label(for="name") Имя*
-                        input(type="text" plesholder="df")
-                    .payment-form__tel
-                        label(for="name")
-                        input(type="text" plesholder="df")
+                    .payment-form__input.input-place
+                        label(for="fio").input-place__label Имя*
+                        input(type="text" plesholder="Имя").input-place__text#fio
+                    .payment-form__tel.input-place 
+                        label(for="tel").input-place__label Телефон*
+                        input(type="text" plesholder="Телефон").input-place__text#tel
             .payment-form__col
                 .payment-form__subtitle Тип заказа
                 .payment-form__row
                     .payment-form__input_radio
-                        label(for="q")
-                        input(type="radio", name="q")
+                        label(for="delivery").radio
+                            input(type="radio", name="delivery")#delivery.radio__input
+                            span.radio__text Доставка 
                     .payment-form__input_radio
-                        label(for="q")
-                        input(type="radio", name="q")
+                        label(for="samovi").radio
+                            input(type="radio", name="delivery")#samovi.radio__input
+                            span.radio__text Самовывоз
             .payment-form__col
                 .payment-form__row
-                    .payment-form__input
-                        label(for="name") Имя*
-                        input(type="text" plesholder="df")
-                    .payment-form__tel
-                        label(for="name")
-                        input(type="text" plesholder="df")
+                    .payment-form__input.input-place
+                        label(for="street").input-place__label Улица*
+                        input(type="text" placeholder="Улица").input-place__text#street
+                    .payment-form__input.input-place
+                        label(for="comment").input-place__label Комментарий
+                        input(type="text" placeholder="Комментарий").input-place__text#comment
+                .payment-form__row
+                    .payment-form__input.input-place
+                        label(for="house").input-place__label Дом*
+                        input(type="text" placeholder="Дом").input-place__text#house
+                    .payment-form__input.input-place
+                        label(for="flat").input-place__label Квартира*
+                        input(type="text" placeholder="Квартира").input-place__text#flat
+                    .payment-form__input.input-place
+                        label(for="corps").input-place__label Корпус
+                        input(type="text" placeholder="Корпус").input-place__text#corps
+                    .payment-form__input.input-place
+                        label(for="entrance").input-place__label Подъезд
+                        input(type="text" placeholder="Подъезд").input-place__text#entrance
+                    .payment-form__input.input-place
+                        label(for="floor").input-place__label Этаж*
+                        input(type="text" placeholder="Этаж").input-place__text#floor
                 .payment-form__row
                     .payment-form__input
-                        label(for="name") Имя*
-                        input(type="text" plesholder="df")
-                    .payment-form__tel
-                        label(for="name")
-                        input(type="text" plesholder="df")
-                        .payment-form__input
-                        label(for="name") Имя*
-                        input(type="text" plesholder="df")
-                    .payment-form__tel
-                        label(for="name")
-                        input(type="text" plesholder="df")
-                    .payment-form__input
-                        label(for="name") Имя*
-                        input(type="text" plesholder="df")
+                        .select-wrapper
+                            select(name="lell" required).adress-to 
+                                option(value="" disabled selected).adress-to__option Где забрать
+                                option(value="адресс").adress-to__option adress 1
+                                option(value="адресс").adress-to__option adress 2
+                    .payment-form__input.input-place
+                        label(for="comment").input-place__label Комментарий
+                        input(type="text" placeholder="Комментарий").input-place__text#comment
+
  
 
 

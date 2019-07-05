@@ -2,7 +2,6 @@
     display: none;
     vertical-align: middle;
     position: relative;
-    z-index: 2;
     max-width: 758px;
     box-sizing: border-box;
     width: 758px;
@@ -10,6 +9,10 @@
     padding: 55px 63px;
     box-shadow: none;
     border-radius: 0;
+    z-index: 100;
+}
+.blocker{
+  z-index: 100;
 }
 .modal a.close-modal {
     position: absolute;
