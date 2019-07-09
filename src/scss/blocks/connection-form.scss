@@ -6,11 +6,15 @@
         width: 100%;
         font-size: 16px;
         padding: 5px 0;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-appearance: none;
         &::placeholder{
             color: #C4C4C4;
         }
         @include mView {
             background: #04081C;
+            color:#fff;
         }
         
     }
@@ -54,5 +58,12 @@
     }
     textarea { 
         display: block;
-        resize: vertical ; }
+        resize: vertical ;
+        height: 57px; 
+        border-radius: 0;
+        -webkit-appearance: none;
+    box-shadow: none;}
+    input{
+        box-shadow: none; 
+    }
 }

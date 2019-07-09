@@ -80,6 +80,9 @@
         @include mView {
             color:#000;
             text-align: center;
+            &:hover{
+                color:#fff;
+            }
         }
     }
 }
