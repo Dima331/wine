@@ -12,6 +12,8 @@
                     slidesToScroll: 2,
                 }
             },
+
+            
             {
                 breakpoint: 851,
                 settings: {
