@@ -1,21 +1,41 @@
+.input-place{
+  &.input-place_error{
+    .input-place__text{
+      border: 1px solid #BD0D0D;
+    }
+  }
+}
+
+
 .input-place {
   display: inline-block;
   position: relative;
-  margin: 10px;
+  //margin: 10px;
+  
   .input-place__label {
     position: absolute;
-    top: -10px;
-    left: 20px;
+    top: -11px;
+    left: 23px;
     background-color: #fff;
+    font-size: 10px;
+    padding: 5px;
+
   }
   .input-place__text {
-    padding: 10px;
+    padding: 12px;
     outline: 0;
     border: 0;
     border-radius: 5px;
     outline: 0;
     border: 1px solid #c4c4c4;
     font-size: 14px;
+    width: 100%;
+    @include sView {
+      font-size: 12px;
+    }
+    &:focus{
+      border: 1px solid  #68B916;
+    }
   }
 }
 
@@ -24,7 +44,10 @@
     position: relative;
     flex: none;
     display: flex;
-  
+    color: #A7A7A7;
+    @include sView {
+      font-size: 14px;
+    }
     .radio__text:before {
       content: " ";
       width: 19px;
@@ -56,8 +79,38 @@
     margin-left: 32px;
     display: flex;
     align-items: center;
-    padding-top: 2px;
   }
+
+
+  .input-place_center{
+    .input-place__text{
+      text-align: center;
+    }
+    .input-place__label{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+  #not-self-delivery,
+ #self-delivery {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -76,6 +129,8 @@
 .select-wrapper{
         position: relative;
         display: inline-block;
+        height: 100%;
+        width: 100%;
     &:before{
         content: "";
         position: absolute;
@@ -85,7 +140,7 @@
         background-repeat: no-repeat;
         top: 47%;
         transform: translateY(-50%) rotate(45deg);
-        right: 8px;
+        right: 15px;
         //background-color: #A7A7A7;
         border-bottom: 1px solid #A7A7A7;
         border-right: 1px solid #A7A7A7;

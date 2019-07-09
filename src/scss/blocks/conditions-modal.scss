@@ -10,6 +10,15 @@
     box-shadow: none;
     border-radius: 0;
     z-index: 100;
+    @include mView {
+      width: 100%;
+      padding: 15px;
+  }
+  .conditions-modal__title{
+    @include mView {
+      padding-right: 40px;
+    }
+}
 }
 .blocker{
   z-index: 100;
@@ -17,13 +26,17 @@
 .modal a.close-modal {
     position: absolute;
     display: block;
-    top: 30px;
-    right: 30px;
+    top: 26px;
+    right: 28px;
     width: 20px;
     height: 20px;
     text-indent: -9999px;
     background-image:none;
     opacity: 0.3;
+    @include sView {
+      top: 20px;
+    right: 20px;
+  }
     &:before, &:after {
         position: absolute;
         left: 10px;

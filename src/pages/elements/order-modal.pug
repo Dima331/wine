@@ -6,18 +6,50 @@
                 .basket-item__left
                     img(src="img/wines/2.png", alt="")
                 .basket-item__right
-                    .basket-item__info-left
+                    .basket-item__info-content
                         .basket-item__title Rosso
                         .basket-item__kind Безалкогольное красное вино
                         .basket-item__magnitude
                             .basket-item__volume 750 мл
                             .basket-item__quantity.count-quantity
-                                button.count-quantity__minus -
-                                .count-quantity__number 1
+                                button.count-quantity__minus –
+                                .count-quantity__number 2
                                 button.count-quantity__plus +
                             .basket-item__price 30 BYN    
                     .basket-item__info-right
-                a().basket-item__del
+                a(href="#").basket-item__del
+            li.basket-list__item.basket-item
+                .basket-item__left
+                    img(src="img/wines/2.png", alt="")
+                .basket-item__right
+                    .basket-item__info-content
+                        .basket-item__title Rosso
+                        .basket-item__kind Безалкогольное красное вино
+                        .basket-item__magnitude
+                            .basket-item__volume 750 мл
+                            .basket-item__quantity.count-quantity
+                                button.count-quantity__minus –
+                                .count-quantity__number 2
+                                button.count-quantity__plus +
+                            .basket-item__price 30 BYN    
+                    .basket-item__info-right
+                a(href="#").basket-item__del
+            li.basket-list__item.basket-item
+                .basket-item__left
+                    img(src="img/wines/2.png", alt="")
+                .basket-item__right
+                    .basket-item__info-content
+                        .basket-item__title Rosso
+                        .basket-item__kind Безалкогольное красное вино
+                        .basket-item__magnitude
+                            .basket-item__volume 750 мл
+                            .basket-item__quantity.count-quantity
+                                button.count-quantity__minus –
+                                .count-quantity__number 2
+                                button.count-quantity__plus +
+                            .basket-item__price 30 BYN    
+                    .basket-item__info-right
+                a(href="#").basket-item__del
         .basket-totals.basket-totals_margin
             .basket-totals__row.courier
                 .basket-totals__text Доставка курьером
@@ -31,63 +63,71 @@
 
             .basket-totals__free-delivery Бесплатная доставка при покупке от 60 BYN
         
-        form.payment-form
-            .payment-form__title Оформление заказа 
-            .payment-form__col
-                .payment-form__subtitle Личные данные 
-                .payment-form__row
-                    .payment-form__input.input-place
-                        label(for="fio").input-place__label Имя*
-                        input(type="text" plesholder="Имя").input-place__text#fio
-                    .payment-form__tel.input-place 
-                        label(for="tel").input-place__label Телефон*
-                        input(type="text" plesholder="Телефон").input-place__text#tel
-            .payment-form__col
-                .payment-form__subtitle Тип заказа
-                .payment-form__row
-                    .payment-form__input_radio
-                        label(for="delivery").radio
-                            input(type="radio", name="delivery")#delivery.radio__input
-                            span.radio__text Доставка 
-                    .payment-form__input_radio
-                        label(for="samovi").radio
-                            input(type="radio", name="delivery")#samovi.radio__input
-                            span.radio__text Самовывоз
-            .payment-form__col
-                .payment-form__row
-                    .payment-form__input.input-place
-                        label(for="street").input-place__label Улица*
-                        input(type="text" placeholder="Улица").input-place__text#street
-                    .payment-form__input.input-place
-                        label(for="comment").input-place__label Комментарий
-                        input(type="text" placeholder="Комментарий").input-place__text#comment
-                .payment-form__row
-                    .payment-form__input.input-place
-                        label(for="house").input-place__label Дом*
-                        input(type="text" placeholder="Дом").input-place__text#house
-                    .payment-form__input.input-place
-                        label(for="flat").input-place__label Квартира*
-                        input(type="text" placeholder="Квартира").input-place__text#flat
-                    .payment-form__input.input-place
-                        label(for="corps").input-place__label Корпус
-                        input(type="text" placeholder="Корпус").input-place__text#corps
-                    .payment-form__input.input-place
-                        label(for="entrance").input-place__label Подъезд
-                        input(type="text" placeholder="Подъезд").input-place__text#entrance
-                    .payment-form__input.input-place
-                        label(for="floor").input-place__label Этаж*
-                        input(type="text" placeholder="Этаж").input-place__text#floor
-                .payment-form__row
-                    .payment-form__input
-                        .select-wrapper
-                            select(name="lell" required).adress-to 
-                                option(value="" disabled selected).adress-to__option Где забрать
-                                option(value="адресс").adress-to__option adress 1
-                                option(value="адресс").adress-to__option adress 2
-                    .payment-form__input.input-place
-                        label(for="comment").input-place__label Комментарий
-                        input(type="text" placeholder="Комментарий").input-place__text#comment
+        form.payment-form.payment-form_margin
+            .payment-form__title Оформление заказа
+            .payment-form__content 
+                .payment-form__col
+                    .payment-form__subtitle Личные данные 
+                    .payment-form__row.payment-form__row_oneline
+                        .payment-form__input.input-place.input-place_error
+                            label(for="fio").input-place__label Имя*
+                            input(type="text" plesholder="Имя").input-place__text#fio
+                        .payment-form__input.input-place 
+                            label(for="tel").input-place__label Телефон*
+                            input(type="text" plesholder="Телефон").input-place__text#tel
+                .payment-form__col.payment-form__col_margin
+                    .payment-form__subtitle.payment-form__subtitle_type Тип заказа
+                    .payment-form__row#radio
+                        .payment-form__input_radio
+                            label(for="delivery").radio
+                                input(type="radio", name="delivery" checked="checked")#delivery.radio__input
+                                span.radio__text Доставка 
+                        .payment-form__input_radio
+                            label(for="samovi").radio
+                                input(type="radio", name="delivery")#samovi.radio__input
+                                span.radio__text Самовывоз
+                .payment-form__col#not-self-delivery
+                    .payment-form__row.payment-form__row_oneline
+                        .payment-form__input.input-place
+                            label(for="street").input-place__label Улица*
+                            input(type="text" placeholder="Улица").input-place__text#street
+                        .payment-form__input.input-place
+                            label(for="comment").input-place__label Комментарий
+                            input(type="text" placeholder="Комментарий").input-place__text#comment
+                    .payment-form__row.payment-form__row_manylines
+                        .payment-form__input.input-place.input-place_center
+                            label(for="house").input-place__label Дом*
+                            input(type="text" placeholder="Дом").input-place__text#house
+                        .payment-form__input.input-place.input-place_center
+                            label(for="flat").input-place__label Квартира*
+                            input(type="text" placeholder="Квартира").input-place__text#flat
+                        .payment-form__input.input-place.input-place_center
+                            label(for="corps").input-place__label Корпус
+                            input(type="text" placeholder="Корпус").input-place__text#corps
+                        .payment-form__input.input-place.input-place_center
+                            label(for="entrance").input-place__label Подъезд
+                            input(type="text" placeholder="Подъезд").input-place__text#entrance
+                        .payment-form__input.input-place.input-place_center
+                            label(for="floor").input-place__label Этаж*
+                            input(type="text" placeholder="Этаж").input-place__text#floor
+                .payment-form__col#self-delivery
+                    .payment-form__row.payment-form__row_oneline
+                            .payment-form__input
+                                .select-wrapper
+                                    select(name="lell" required).adress-to 
+                                        option(value="" disabled selected).adress-to__option Где забрать
+                                        option(value="адресс").adress-to__option adress 1
+                                        option(value="адресс").adress-to__option adress 2
+                            .payment-form__input.input-place
+                                label(for="comment").input-place__label Комментарий
+                                input(type="text" placeholder="Комментарий").input-place__text#comment
+                .payment-form__btn
+                    input(type="submit" value="Оформить заказ").btn.btn-registration
+                    
+                    
+                    
+                    
 
- 
+    
 
 

@@ -1,44 +1,123 @@
 .for-whom {
-  padding-top: 79px;
-  .for-whom__container {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 990px;
-      height: 1239px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      top: 42%;
-      transform: translateY(-50%);
-      right: -31%;
-      background-image: url("../img/pic/bg-section-for.png");
+    padding-top: 79px;
+    z-index: 4;
+    @include mView {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-  }
-
-  .for-whom__content {
-    width: 43%;
-  }
-  .for-whom__title {
-    margin-bottom: 42px;
-  }
-  .for-whom__advantage-icon {
-    margin-bottom: 57px;
-  }
-  .for-whom__advantage {
-    padding: 30px 0 30px 13px;
-    font-size: 18px;
-  }
-}
-.for-whom{
-    ul.advantage{
+    .for-whom__container {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 990px;
+            height: 1239px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 42%;
+            transform: translateY(-50%);
+            right: -31%;
+            background-image: url("../img/pic/bg-section-for.png");
+            @media (max-width: 1270px) {
+                content: "";
+                position: absolute;
+                width: 879px;
+                height: 797px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: 42%;
+                transform: translateY(-50%);
+                right: -31%;
+            }
+            @media (max-width: 1070px) {
+                top: 42%;
+                transform: translate(-50%, -50%);
+                left: 92%;
+                width: 792px;
+                height: 737px;
+            }
+            @media (max-width: 910px) {
+                left: 101%;
+            }
+            @include mView {
+                display: none;
+            }
+        }
+    }
+    .for-whom__content {
+        width: 43%;
+        @include mView {
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include sView {
+            width: 100%;
+        }
+    }
+    .for-whom__title {
+        margin-bottom: 42px;
+        @include slView {
+            margin-bottom: 10px;
+        }
+        @include mView {
+            margin-bottom: 25px;
+        }
+        @include sView {
+            margin-bottom: 5px;
+        }
+    }
+    .for-whom__advantage-icon {
+        margin-bottom: 57px;
+        @include slView {
+            margin-bottom: 10px;
+        }
+        @include mView {
+            margin-bottom: 25px;
+        }
+        @include sView {
+            margin-bottom: 5px;
+        }
+    }
+    .for-whom__advantage {
         padding: 30px 0 30px 13px;
         font-size: 18px;
-        li{
+    }
+    .for-whom__text {
+        @include mView {
+            padding-left: 13px;
+        }
+        @include sView {
+            padding-left: 0;
+        }
+    }
+    .for-whom__btn {
+        @include mView {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}
+
+.for-whom {
+    ul.advantage {
+        padding: 30px 0 30px 13px;
+        font-size: 18px;
+        @include slView {
+            font-size: 16px;
+            padding: 15px 0 15px 13px;
+        }
+        @include sView {
+            padding: 15px 0 15px 0;
+            font-size: 14px;
+        }
+        li {
             padding-left: 14px;
             margin-bottom: 6px;
             position: relative;
-            &::before{
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::before {
                 content: "";
                 width: 5px;
                 height: 5px;
@@ -51,5 +130,4 @@
             }
         }
     }
-
 }

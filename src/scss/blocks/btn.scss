@@ -1,47 +1,78 @@
 .btn {
-  border: 2px solid #bd0d0d;
-  border-radius: 3px;
-  padding: 9px 74px;
-  display: inline-block;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  transition: background .5s;
-  transition: color .6s;
-  &.btn-disabled {
-    border: 2px solid #c4c4c4;
-    color: #a7a7a7;
-    pointer-events: none;
-    cursor: default;
-  }
-  &:hover {
-    background: #bd0d0d;
     border: 2px solid #bd0d0d;
-    color: #fff;
-  }
-  &:focus {
-    background: #bd0d0d;
-    padding: 11px 76px;
-    border: 0;
-    color: #fff;
-    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
-  }
+    border-radius: 3px;
+    padding: 9px 74px;
+    display: inline-block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background .5s;
+    transition: color .6s;
+    &.btn-disabled {
+        border: 2px solid #c4c4c4;
+        color: #a7a7a7;
+        pointer-events: none;
+        cursor: default;
+    }
+    &:hover {
+        background: #bd0d0d;
+        border: 2px solid #bd0d0d;
+        color: #fff;
+    }
+    &:focus {
+        background: #bd0d0d;
+        padding: 11px 76px;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+    }
+    @include mView {
+        color: #fff;
+    }
+    @include sView {
+        font-size: 14px;
+    }
 }
+
 .btn-form {
-  border: 2px solid #68b916;
-  background-color: #fff;
-  padding: 11px 47px;
-  cursor: pointer;
-  &:hover {
-    background: #68b916;
     border: 2px solid #68b916;
+    background-color: #fff;
+    padding: 11px 47px;
+    cursor: pointer;
+    &:hover {
+        background: #68b916;
+        border: 2px solid #68b916;
+        color: #fff;
+    }
+    &:focus {
+        background: #68b916;
+        padding: 13px 49px;
+        border: 0;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+        outline: 0;
+    }
+    @include mView {
+        background: #68b916;
+        padding: 9px 74px;
+    }
+}
+
+.btn-registration {
+    background: #68B916;
+    border: 2px solid #68B916;
+    padding: 9px 69px;
+    cursor: pointer;
     color: #fff;
-  }
-  &:focus {
-    background: #68b916;
-    padding: 13px 49px;
-    border: 0;
-    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
-    outline: 0;
-  }
+    &:hover {
+        background: #84E225;
+        border: 2px solid #68B916;
+    }
+    &:focus {
+        background: #84E225;
+        border: 2px solid #68B916;
+        padding: 9px 69px;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+        outline: 0;
+    }
 }

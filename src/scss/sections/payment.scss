@@ -1,48 +1,90 @@
-.payment{
+.payment {
     position: relative;
-    padding-top: 100px;
-    .payment__container{
+    padding-top: 70px;
+    @include mView {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .payment__container {
         position: relative;
-        &::before{
-        content: "";
-        position: absolute;
-        width: 969px;
-        height: 1111px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 49%;
-        transform: translateY(-50%);
-        right: -319px;
-        background-image: url("../img/pic/bg-section-payment.png");
-    
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1022px;
+            height: 1111px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 49%;
+            transform: translateY(-50%);
+            right: -369px;
+            background-image: url("../img/pic/bg-section-payment.png");
+            @include lView {
+                width: 911px;
+                height: 914px;
+            }
+            @media (max-width: 1150px) {
+                width: 771px;
+                height: 849px;
+                right: -332px;
+                top: 47%;
+            }
+            @include slView {
+                width: 700px;
+                height: 777px;
+            }
+            @include mView {
+                background-image: none;
+            }
+        }
     }
-    }
-    
-    &.payment_margin{
+    &.payment_margin {
         margin-top: 60px;
     }
-    .payment__content{
-        width: 47%;
+    .payment__content {
+        width: 570px;
+        @media (max-width: 1060px) {
+            width: 50%;
+        }
+        @include mView {
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include sView {
+            width: 100%;
+        }
     }
-    .payment__title{
+    .payment__title {
         margin-bottom: 57px;
+        @include slView {
+            margin-bottom: 25px;
+        }
     }
-    .payment__step-list{
+    .payment__step-list {
         margin-bottom: 41px;
+        @include slView {
+            margin-bottom: 25px;
+        }
     }
-    .payment__choice{
+    .payment__choice {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 402px;
+        @include mView {
+            width: 100%;
+        }
     }
-    .payment__btn{
+    .payment__btn {
         margin-bottom: 10px;
+        @include mView {
+            color:#000;
+            text-align: center;
+        }
     }
 }
 
-.payment_padding{
+.payment_padding {
     padding-top: 96px;
     padding-bottom: 30px;
 }

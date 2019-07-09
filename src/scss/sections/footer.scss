@@ -1,27 +1,108 @@
 .footer{
-   display: flex;
-   margin: 0 auto;
    padding-top: 111px;
    padding-bottom: 43px;
-   width: 915px;
-   .footer__left{
+   @include slView {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include mView {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer__container{
+    width: 915px;
+    margin: 0 auto;
     display: flex;
-   } 
+    @include slView {
+        width: 100%;
+    }
+    @include mView {
+        flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    }
+    @media (max-width: 510px) {
+        width: 315px;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+}
+.order-time{
+    width: 120px;
+    @include slView {
+        width: 20%;
+    }
+    @include mView {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+}
+.telephone{
+    width: 180px;
+    @include slView {
+        width: 20%;
+    }
+    @include mView {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+}
+.types-payment{
+    width: 180px;
+    @include slView {
+        width: 20%;
+    }
+    @include mView {
+        width: 40%;
+    }
+}
+.ip-company {
+    width: 300px;  
+    @include slView {
+        width: 35%;
+    }
+    @include mView {
+        width: 40%;
+    }
+}
    .footer__title{
         color: #000000;
         font-size: 18px;
         font-weight: 800;
         margin-bottom: 8px;
+        @include mView {
+            margin-bottom: 0;
+        }
    }
    .footer__row{
-    flex: 1 1 100px;
+    //flex: 1 1 100px;
     margin-right: 10px;
     &:first-child{
-        flex: 1 1 40px; 
+        //flex: 1 1 40px; 
         margin-right: 89px;
+        @include slView {
+            margin-right: 20px;
+        }
+        @include mView {
+            margin-right: 20px;
+        }
+    }
+    @include mView {
+        margin-right: 20px;
     }
     &:last-child{
         margin-right: 0;
+    }
+    &:nth-child(2n){
+        @include mView {
+            margin-right: 0;
+        }
     }
    }
    .footer__right{

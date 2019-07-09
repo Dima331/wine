@@ -3,10 +3,17 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    // @include lView {
-    //     width: 94%;
-    //     margin: 0 auto;
-    // }
+    @include lView {
+        width: 94%;
+        margin: 0 auto;
+    }
+    @include mView {
+        width: 92%;
+        margin: 0 auto;
+    }
+    @include sView {
+        width: 88%;
+    }
 }
 
 .wrapper {
@@ -17,15 +24,23 @@
     flex-direction: column;
     //margin-bottom: 100px;
 }
+
 .visually-hidden,
 input[type="radio"],
 input[type="checkbox"] {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
+
+// .maincontent{
+//   display: flex;
+//   flex-direction: column;
+//   overflow: hidden;
+//   position: absolute;
+// }

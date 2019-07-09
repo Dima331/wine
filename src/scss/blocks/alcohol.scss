@@ -1,4 +1,4 @@
-.alcohol{
+.alcohol {
     color: #fff;
     background: #BD0D0D;
     border-radius: 3px;
@@ -7,4 +7,11 @@
     line-height: 1;
     font-weight: 800;
     font-size: 24px;
+    @include smView {
+        font-size: 18px;
+    }
+    @include ssView {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
 }

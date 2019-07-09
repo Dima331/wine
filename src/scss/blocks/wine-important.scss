@@ -1,19 +1,25 @@
-.wine-important{
+.wine-important {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    .wine-important__title{
+    .wine-important__title {
         font-size: 30px;
         color: #04081C;
         font-weight: 800;
         line-height: 1.3;
+        @include mView {
+            color: #fff;
+        }
     }
-    .wine-important__kind{
+    .wine-important__kind {
         color: #585858;
         font-size: 14px;
         font-weight: 400;
+        @include mView {
+            color: #fff;
+        }
     }
-    .wine-important__price{
+    .wine-important__price {
         display: flex;
         align-items: center;
         min-width: 50px;
@@ -21,5 +27,8 @@
         font-size: 24px;
         font-weight: 850;
         margin-bottom: 10px;
+        @include mView {
+            color: #fff;
+        }
     }
 }

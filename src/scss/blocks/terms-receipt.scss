@@ -3,11 +3,21 @@
         font-weight: 800;
         margin-bottom: 20px;
         font-size: 18px;
+        @include mView {
+            margin-bottom: 10px;
+            font-size: 16px;
+        } 
     }
     p{
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+        @include mView {
+            margin-bottom: 10px;
+        } 
     }
 }
 .terms-receipt_margin{
     margin-top: 40px;
+    @include mView {
+        margin-top: 20px;
+    }
 }

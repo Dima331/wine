@@ -1,14 +1,27 @@
 .connection {
-    margin: 0 auto;
     padding-top: 72px;
     //-z-index: 1;
-
+    @include mView {
+        padding-top: 30px;
+        background: #04081C;
+        padding-bottom: 30px;
+    }
     .connection__container {
         width: 562px;
+        @include mView {
+            width: 74%;
+            margin: 0 auto;
+        }
+        @include sView {
+            width: 88%;
+        }
     }
 
     .connection__title {
         margin-bottom: 13px;
+        @include mView {
+            color: #fff;
+        }
     }
 
     .connection__help {
@@ -16,10 +29,19 @@
         font-size: 16px;
         width: 96%;
         margin: 0 auto;
+        @include mView {
+            color: #6E6E6E;
+            margin: 0;
+        }
     }
 
     .connection__text {
         text-align: center;
         margin-bottom: 42px;
+        @include mView {
+            text-align: left;
+            margin-bottom: 25px;
+        }
     }
+
 }

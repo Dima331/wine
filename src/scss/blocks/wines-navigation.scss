@@ -1,0 +1,30 @@
+.wines-navigation {
+    position: absolute;
+    width: 106%;
+    height: 50px;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%);
+    z-index: 0;
+    @include mlView {
+        width: 108%;
+    }
+    @media (max-width: 660px) {
+        display: none;
+    }
+    .wines-navigation__prev,
+    .wines-navigation__next {
+        position: absolute;
+        width: 28px;
+        height: 55px;
+        background-image: url("../img/icons/arrow.svg");
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .wines-navigation__prev {
+        transform: rotate(180deg);
+    }
+    .wines-navigation__next {
+        right: 0;
+    }
+}

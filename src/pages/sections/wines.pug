@@ -1,8 +1,12 @@
 section.wines
     .container.wines__container
+        .wines-navigation
+            a(href="#").wines-navigation__prev  
+            a(href="#").wines-navigation__next
         ul.wines-list
             li.wines-list__item.wine
-                img(src="img/wines/1.png", alt="wine").wine__img
+                .wine__img
+                    img(src="img/wines/1.png", alt="wine").wine__img-pic
                 .wine__info
                     .wine-important
                         .wine-important__name
@@ -28,7 +32,8 @@ section.wines
                     .wine__buy
                         a.btn.btn-disabled(href="#ex2" rel="modal:open") Нет в наличии
             li.wines-list__item.wine
-                img(src="img/wines/2.png", alt="wine").wine__img
+                .wine__img
+                    img(src="img/wines/2.png", alt="wine").wine__img-pic
                 .wine__info
                     .wine-important
                         .wine-important__name
@@ -54,7 +59,8 @@ section.wines
                     .wine__buy
                         a.btn(href="#ex2" rel="modal:open") В корзину
             li.wines-list__item.wine
-                img(src="img/wines/3.png", alt="wine").wine__img
+                .wine__img
+                    img(src="img/wines/3.png", alt="wine").wine__img-pic
                 .wine__info
                     .wine-important
                         .wine-important__name
@@ -80,7 +86,8 @@ section.wines
                     .wine__buy
                         a.btn(href="#ex2" rel="modal:open") В корзину           
             li.wines-list__item.wine
-                img(src="img/wines/3.png", alt="wine").wine__img
+                .wine__img
+                    img(src="img/wines/3.png", alt="wine").wine__img-pic
                 .wine__info
                     .wine-important
                         .wine-important__name
@@ -103,3 +110,5 @@ section.wines
                         li.wine-about__row
                             .wine-about__characteristic Производитель:
                             .wine-about__property Winezero, Galleria Crispi 5, 36100 Vicenza Vicenza, Italy
+                    .wine__buy
+                        a.btn(href="#ex2" rel="modal:open") В корзину   
