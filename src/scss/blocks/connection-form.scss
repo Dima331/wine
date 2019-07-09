@@ -2,7 +2,7 @@
     .connection-form__input{
         outline: 0;
         border: 0;
-        border-bottom: 0.5px solid #000;
+        border-bottom: 1px solid #000;
         width: 100%;
         font-size: 16px;
         padding: 5px 0;
@@ -32,7 +32,10 @@
         }
     }
     .connection-form__col_error{
+    .connection-form__input{
         border-bottom: 1px solid #BD0D0D;
+    }
+        
     }
     .connection-form__input~.focus-border {
         position: absolute;
@@ -42,9 +45,6 @@
         height: 2px;
         background-color: #4caf50;
         transition: 0.4s;
-        &.focus-border_textarea{
-            bottom: 6px;
-        }
     }
     
     .connection-form__input:focus~.focus-border {
@@ -52,5 +52,7 @@
         transition: 0.4s;
         left: 0;
     }
-    textarea { resize: vertical ; }
+    textarea { 
+        display: block;
+        resize: vertical ; }
 }

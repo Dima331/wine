@@ -6,8 +6,13 @@
     top: 22%;
     transform: translate(-50%);
     z-index: 0;
+    display: none;
     @include mlView {
         width: 108%;
+        
+    }
+    @media (max-width: 1049px) {
+        display: block;
     }
     @media (max-width: 660px) {
         display: none;

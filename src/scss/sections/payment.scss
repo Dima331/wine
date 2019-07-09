@@ -33,7 +33,7 @@
                 height: 777px;
             }
             @include mView {
-                background-image: none;
+                display: none;
             }
         }
     }
