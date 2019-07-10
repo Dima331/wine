@@ -2,6 +2,15 @@
   display: flex;
   .types-payment-list__item {
     margin-right: 13px;
+    &:nth-child(1){
+      width: 34%;
+    }
+    &:nth-child(2){
+      width: 12%;
+    }
+    &:nth-child(3){
+      width: 45%;
+    }
     &:last-child {
       margin-right: 0;
     }
