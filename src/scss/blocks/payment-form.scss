@@ -1,119 +1,119 @@
-.payment-form{
-    .payment-form__title{
-        font-size: 35px;
-        color: #01000B;
-        font-weight: 800;
-        padding-left: 13px;
-        margin-bottom: 28px;
-        @include mView {
-            font-size: 30px;
-          }
-          @include sView {
-            padding-left: 0;
-          }
+.payment-form {
+  .payment-form__title {
+    font-size: 35px;
+    color: #01000b;
+    font-weight: 800;
+    padding-left: 13px;
+    margin-bottom: 28px;
+    @include mView {
+      margin-bottom: 19px;
+      font-size: 30px;
     }
-    .payment-form__subtitle{
-        font-size: 18px;
-        color: #01000B;
-        margin-bottom: 33px;
-        @include sView {
-            margin-bottom: 15px;
-            font-size: 14px;
-          }
+    @include sView {
+      padding-left: 0;
     }
-    &.payment-form_margin{
-        margin-top: 18px;
+  }
+  .payment-form__subtitle {
+    font-size: 18px;
+    color: #01000b;
+    margin-bottom: 33px;
+    @include sView {
+      margin-bottom: 15px;
+      font-size: 14px;
     }
-    .payment-form__content{
-        width: 576px;
-        margin: 0 auto;
-        @include mView {
-            width: 100%;
-            padding-left: 13px;
-            padding-right: 13px;
-          }
-          @include sView {
-            width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-          }
+  }
+  &.payment-form_margin {
+    margin-top: 18px;
+  }
+  .payment-form__content {
+    width: 576px;
+    margin: 0 auto;
+    @include mView {
+      width: 100%;
+      padding-left: 13px;
+      padding-right: 13px;
     }
-    .payment-form__row{
-        display: flex;
-        margin-bottom: 22px;
-        flex-wrap: wrap;
+    @include sView {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
-    .payment-form__row_oneline{
-        .payment-form__input{
-            @include sView {
-                width: 100%;
-                flex: auto;
-                margin: 0;
-                margin-bottom: 20px;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-            }
-        }
-        
-    }
-    .payment-form__row_manylines{
-        .payment-form__input{
-            @include sView {
-                width: 32%;
-                flex: initial;
-                margin: 0;
-                margin-right: 2%;
-                margin-bottom: 20px;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-                &:nth-child(3n){
-                    margin-right: 0;
-                }
-                &:nth-child(4n){
-                    margin-bottom: 0;
-                }
-                &:nth-child(5n){
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .payment-form__input{
-        flex: 1;
-        box-shadow: none;
-        margin-right: 12px;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-    .payment-form__col{
+  }
+  .payment-form__row {
+    display: flex;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  .payment-form__row_oneline {
+    .payment-form__input {
+      @include sView {
+        width: 100%;
+        flex: auto;
+        margin: 0;
         margin-bottom: 20px;
-    }
-    .payment-form__input_radio{
-        margin-right: 20px;
-        &:last-child{
-            margin-right: 0;
+        &:last-child {
+          margin-bottom: 0;
         }
-        @include sView {
-            font-size: 14px;
-          }
+      }
     }
-    .payment-form__subtitle_type{
-        margin-bottom: 24px;
+  }
+  .payment-form__row_manylines {
+    .payment-form__input {
+      @include sView {
+        width: 32%;
+        flex: initial;
+        margin: 0;
+        margin-right: 2%;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-child(4n) {
+          margin-bottom: 0;
+        }
+        &:nth-child(5n) {
+          margin-bottom: 0;
+        }
+      }
     }
-    .payment-form__col_margin{
-        margin-bottom: 40px;
-        @include sView {
-            margin-bottom: 20px;
-          }
+  }
+  .payment-form__input {
+    flex: 1;
+    box-shadow: none;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
     }
-    .payment-form__btn{
-        display: flex;
-        justify-content: flex-end;
-        @include sView {
-            justify-content: center;
-          }
+  }
+  .payment-form__col {
+    margin-bottom: 20px;
+  }
+  .payment-form__input_radio {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
     }
+    @include sView {
+      font-size: 14px;
+    }
+  }
+  .payment-form__subtitle_type {
+    margin-bottom: 24px;
+  }
+  .payment-form__col_margin {
+    margin-bottom: 40px;
+    @include sView {
+      margin-bottom: 20px;
+    }
+  }
+  .payment-form__btn {
+    display: flex;
+    justify-content: flex-end;
+    @include sView {
+      justify-content: center;
+    }
+  }
 }

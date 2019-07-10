@@ -1,8 +1,8 @@
 section.wines
     .container.wines__container
         .wines-navigation
-            a(href="#").wines-navigation__prev  
-            a(href="#").wines-navigation__next
+            a(href="/").wines-navigation__prev  
+            a(href="/").wines-navigation__next
         ul.wines-list
             li.wines-list__item.wine
                 .wine__img
@@ -29,8 +29,8 @@ section.wines
                         li.wine-about__row
                             .wine-about__characteristic Производитель:
                             .wine-about__property Winezero, Galleria Crispi 5, 36100 Vicenza Vicenza, Italy
-                    .wine__buy
-                        a.btn.btn-disabled(href="#ex2" rel="modal:open") Нет в наличии
+                .wine__buy
+                    a.btn.disabled(href="#basket" rel="modal:open") Нет в наличии
             li.wines-list__item.wine
                 .wine__img
                     img(src="img/wines/2.png", alt="wine").wine__img-pic
@@ -56,8 +56,8 @@ section.wines
                         li.wine-about__row
                             .wine-about__characteristic Производитель:
                             .wine-about__property Winezero, Galleria Crispi 5, 36100 Vicenza Vicenza, Italy
-                    .wine__buy
-                        a.btn(href="#ex2" rel="modal:open") В корзину
+                .wine__buy
+                    a.btn(href="#basket" rel="modal:open") В корзину
             li.wines-list__item.wine
                 .wine__img
                     img(src="img/wines/3.png", alt="wine").wine__img-pic
@@ -83,8 +83,8 @@ section.wines
                         li.wine-about__row
                             .wine-about__characteristic Производитель:
                             .wine-about__property Winezero, Galleria Crispi 5, 36100 Vicenza Vicenza, Italy
-                    .wine__buy
-                        a.btn(href="#ex2" rel="modal:open") В корзину           
+                .wine__buy
+                    a.btn(href="#basket" rel="modal:open") В корзину           
             //-li.wines-list__item.wine
                 .wine__img
                     img(src="img/wines/3.png", alt="wine").wine__img-pic
@@ -110,5 +110,5 @@ section.wines
                         li.wine-about__row
                             .wine-about__characteristic Производитель:
                             .wine-about__property Winezero, Galleria Crispi 5, 36100 Vicenza Vicenza, Italy
-                    .wine__buy
-                        a.btn(href="#ex2" rel="modal:open") В корзину   
+                .wine__buy
+                    a.btn(href="#ex2" rel="modal:open") В корзину   

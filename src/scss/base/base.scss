@@ -1,74 +1,76 @@
 @mixin ssView {
-    @media (max-width: 400px) {
-        @content;
-    }
+  @media (max-width: 400px) {
+    @content;
+  }
 }
 
 @mixin sView {
-    @media (max-width: 500px) {
-        @content;
-    }
+  @media (max-width: 500px) {
+    @content;
+  }
 }
 
 @mixin smView {
-    @media (max-width: 670px) {
-        @content;
-    }
+  @media (max-width: 670px) {
+    @content;
+  }
 }
 
 @mixin mView {
-    @media (max-width: 850px) {
-        @content;
-    }
+  @media (max-width: 850px) {
+    @content;
+  }
 }
 
 @mixin slView {
-    @media only screen and (max-width: 950px) {
-        @content;
-    }
+  @media only screen and (max-width: 950px) {
+    @content;
+  }
 }
 
 @mixin mlView {
-    @media only screen and (max-width: 1070px) {
-        @content;
-    }
+  @media only screen and (max-width: 1070px) {
+    @content;
+  }
 }
 
 @mixin lView {
-    @media only screen and (max-width: 1250px) {
-        @content;
-    }
+  @media only screen and (max-width: 1250px) {
+    @content;
+  }
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-    line-height: 1.42;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    height: 100%;
-    font-size: 1rem;
-    font-weight: 600;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 600;
 }
-html{
-    -webkit-overflow-scrolling: touch;
+
+html {
+  -webkit-overflow-scrolling: touch;
 }
+
 ul,
 ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 p,
@@ -78,132 +80,114 @@ h2,
 h4,
 h5,
 h6 {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 section {
-    height: 100%;
-    padding-top: 75px;
-    padding-bottom: 30px;
-    @include slView {
-        padding-bottom: 0;
-    }
-    @include mlView {
-        padding-top: 30px;
-    }
+  height: 100%;
+  padding-top: 75px;
+  padding-bottom: 30px;
+
+  @include slView {
+    padding-bottom: 0;
+  }
+
+  @include mlView {
+    padding-top: 30px;
+  }
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
-    color: #04081C;
-    font-size: 74px;
-    font-weight: 900;
-    line-height: 1;
-    @include mlView {
-        font-size: 62px;
-    }
-    @include smView {
-        font-size: 44px;
-    }
-    @include ssView {
-        font-size: 30px;
-    }
-    // @include ssView {
-    //   font-size: 42px;
-    // }
+  color: #04081c;
+  font-size: 74px;
+  font-weight: 900;
+  line-height: 1;
+
+  @include mlView {
+    font-size: 62px;
+  }
+  @include smView {
+    font-size: 44px;
+  }
+
+  @include ssView {
+    font-size: 30px;
+    line-height: 1.3;
+  }
 }
 
 h2 {
-    color: #04081C;
-    font-size: 62px;
-    font-weight: 800;
-    line-height: 1;
-    @include mlView {
-        font-size: 50px;
-    }
-    @include slView {
-        font-size: 40px;
-    }
-    @include smView {
-        font-size: 35px;
-    }
-    @include ssView {
-        font-size: 30px;
-    }
-    // @include sView {
-    //   font-size: 40px;
-    // }
+  color: #04081c;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 1;
+  @include mlView {
+    font-size: 50px;
+  }
+
+  @include slView {
+    font-size: 40px;
+  }
+  @include smView {
+    font-size: 35px;
+  }
+
+  @include ssView {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  color: #04081c;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+
+  @include mView {
+    font-size: 42px;
+  }
+
+  @include ssView {
+    font-size: 35px;
+  }
 }
 
 h4 {
-    font-size: 35px;
-    color: #01000B;
-    @include mView {
-        line-height: 1;
-        font-size: 24px;
-    }
-    @include sView {
-        line-height: 1;
-        font-size: 20px;
-    }
+  font-size: 35px;
+  color: #01000b;
+
+  @include mView {
+    line-height: 1;
+    font-size: 24px;
+  }
+
+  @include sView {
+    line-height: 1;
+    font-size: 20px;
+  }
 }
 
-// h3{
-//   color: #0d0d0d;
-//   font-size: 36px;
-//   font-weight: 700;
-//   text-transform: uppercase;
-//   line-height: 1.2;
-//   @include mView {
-//     font-size: 30px;
-//   }
-//   @include ssView {
-//     font-size: 24px;
-//   }
-// }
-// h4 {
-//   font-size: 27px;
-//   font-weight: 700;
-//   line-height: 1;
-// }
 p {
-    font-size: 18px;
-    color: #04081C;
-    @include slView {
-        font-size: 16px;
-    }
-    @include ssView {
-        font-size: 14px;
-    }
-    // @include ssView {
-    //   font-size: 16px;
-    // }
+  font-size: 18px;
+  color: #04081c;
+  @include slView {
+    font-size: 16px;
+  }
+  
+  @include ssView {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
-
-// button {
-//   color: #0f5a47;
-//   font-family: "AlegreyaSans";
-//   font-size: 19px;
-//   font-weight: 700;
-//   text-transform: uppercase;
-//   background-color: #fff;
-//   padding: 19px 35px;
-//   border-radius: 45px;
-//   border: 0;
-//   box-shadow: -2px 3px 10px 1px #0000003b;
-//   cursor: pointer;
-//   &:focus {
-//     outline: none;
-//   }
-// }

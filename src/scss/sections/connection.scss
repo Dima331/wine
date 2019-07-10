@@ -1,47 +1,45 @@
 .connection {
-    padding-top: 72px;
-    //-z-index: 1;
+  padding-top: 72px;
+  @include mView {
+    padding-top: 30px;
+    background: #04081c;
+    padding-bottom: 30px;
+  }
+  .connection__container {
+    width: 562px;
     @include mView {
-        padding-top: 30px;
-        background: #04081C;
-        padding-bottom: 30px;
+      width: 74%;
+      margin: 0 auto;
     }
-    .connection__container {
-        width: 562px;
-        @include mView {
-            width: 74%;
-            margin: 0 auto;
-        }
-        @include sView {
-            width: 88%;
-        }
+    @include sView {
+      width: 88%;
     }
+  }
 
-    .connection__title {
-        margin-bottom: 13px;
-        @include mView {
-            color: #fff;
-        }
+  h2 {
+    margin-bottom: 13px;
+    @include mView {
+      color: #fff;
     }
+  }
 
-    .connection__help {
-        line-height: 1.35;
-        font-size: 16px;
-        width: 96%;
-        margin: 0 auto;
-        @include mView {
-            color: #6E6E6E;
-            margin: 0;
-        }
+  p {
+    line-height: 1.35;
+    font-size: 16px;
+    width: 96%;
+    margin: 0 auto;
+    @include mView {
+      color: #6e6e6e;
+      margin: 0;
     }
+  }
 
-    .connection__text {
-        text-align: center;
-        margin-bottom: 42px;
-        @include mView {
-            text-align: left;
-            margin-bottom: 25px;
-        }
+  .connection__text {
+    text-align: center;
+    margin-bottom: 42px;
+    @include mView {
+      text-align: left;
+      margin-bottom: 25px;
     }
-
+  }
 }

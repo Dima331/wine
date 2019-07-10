@@ -1,58 +1,57 @@
 .btn-buy {
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 24px;
+  text-decoration: underline;
+  color: #68b916;
+  font-weight: 700;
+  position: relative;
+  &:hover {
+    color: #84e225;
+  }
+  @include mView {
+    background: #bd0d0d;
     display: inline-block;
-    border-radius: 3px;
-    font-size: 24px;
-    text-decoration: underline;
-    color: #68B916;
+    padding: 9px 74px;
+    color: #000000;
+    font-size: 18px;
     font-weight: 700;
-    position: relative;
+    transition: background 0.5s;
+    text-decoration: none;
+    transition: color 0.6s;
+    color: #fff;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #bd0d0d;
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+      &:focus {
+        border: 0;
+      }
+    }
+    &.btn-disabled {
+      border: 2px solid #c4c4c4;
+      color: #a7a7a7;
+      pointer-events: none;
+      cursor: default;
+    }
     &:hover {
-        color: #84E225;
+      background: #bd0d0d;
+      color: #fff;
     }
-    @include mView {
-        background: #bd0d0d;
-        display: inline-block;
-        padding: 9px 74px;
-        color: #000000;
-        font-size: 18px;
-        font-weight: 700;
-        transition: background .5s;
-        text-decoration: none;
-        transition: color .6s;
-        color: #fff;
-        &:before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #bd0d0d;
-            top: 0;
-        left: 0;
-        border-radius: 3px;
-        &:focus {
-            border: 0;
-        }
-        }
-        &.btn-disabled {
-            border: 2px solid #c4c4c4;
-            color: #a7a7a7;
-            pointer-events: none;
-            cursor: default;
-        }
-        &:hover {
-            background: #bd0d0d;
-            color: #fff;
-        }
-        &:focus {
-            background: #bd0d0d;
-            outline: 0;
-            color: #fff;
-            box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        
+    &:focus {
+      background: #bd0d0d;
+      outline: 0;
+      color: #fff;
+      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
     }
-    @include sView {
-            font-size: 14px;
-        }
+  }
+  @include sView {
+    font-size: 14px;
+    padding: 9px 56px;
+  }
 }

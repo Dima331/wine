@@ -1,16 +1,16 @@
 .wine-about {
-    font-size: 18px;
-    line-height: 1.5;
-    .wine-about__characteristic {
-        color: #000000;
-        display: inline;
-        @include mView {
-            color: #fff;
-        }
+  font-size: 18px;
+  line-height: 1.5;
+  .wine-about__characteristic {
+    color: #000000;
+    display: inline;
+    @include mView {
+      color: #fff;
     }
-    .wine-about__property {
-        color: #a7a7a7;
-        display: inline;
-        margin-left: 4px;
-    }
+  }
+  .wine-about__property {
+    color: #a7a7a7;
+    display: inline;
+    margin-left: 4px;
+  }
 }

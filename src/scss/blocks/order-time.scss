@@ -1,7 +1,9 @@
-.order-time{
-    .order-time__text{
-        font-size: 14px;
-
-color: #A7A7A7;
+.order-time {
+  .order-time__text {
+    font-size: 14px;
+    color: #a7a7a7;
+    @include sView {
+      font-size: 12px;
     }
+  }
 }

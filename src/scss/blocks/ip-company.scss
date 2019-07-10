@@ -1,7 +1,9 @@
-.ip-company{
-    .ip-company__text{
-         font-size: 14px;
-    color: #A7A7A7;
+.ip-company {
+  p {
+    font-size: 14px;
+    color: #a7a7a7;
+    @include sView {
+      font-size: 12px;
     }
-   
+  }
 }

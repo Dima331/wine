@@ -1,19 +1,19 @@
 .wines {
-    padding-top: 80px;
-    z-index: 3;
+  padding-top: 80px;
+  z-index: 3;
+  @include mlView {
+    padding-top: 30px;
+  }
+  @include mView {
+    background: #04081c;
+  }
+  .wines__container {
+    position: relative;
     @include mlView {
-        padding-top: 30px;
+      width: 92%;
     }
     @include mView {
-        background: #04081C;
+      width: 100%;
     }
-    .wines__container {
-        position: relative;
-        @include mlView {
-            width: 92%;
-        }
-        @include mView {
-            width: 100%;
-        }
-    }
+  }
 }

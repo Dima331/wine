@@ -1,27 +1,27 @@
 .header {
-    padding: 28px 0;
-    width: 100%;
-    @include mView {
-        padding: 22px 0;
+  padding: 28px 0;
+  width: 100%;
+  @include mView {
+    padding: 22px 0;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .header__logo {
+    margin-right: 93px;
+    @media (max-width: 620px) {
+      margin-right: 30px;
     }
-    .header__container {
-        display: flex;
-        flex-direction: row;
+  }
+  .header__contact {
+    line-height: 1;
+    @include sView {
+      display: none;
     }
-    .header__logo {
-        margin-right: 93px;
-        @media (max-width: 620px) {
-            margin-right: 30px;
-        }
+    .contact {
+      margin-bottom: 4px;
+      margin-top: -3px;
     }
-    .header__contact {
-        line-height: 1;
-        @include sView {
-            display: none;
-        }
-        .contact {
-            margin-bottom: 4px;
-            margin-top: -3px;
-        }
-    }
+  }
 }

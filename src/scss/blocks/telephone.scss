@@ -3,5 +3,8 @@
     font-size: 14px;
     color: #a7a7a7;
     font-weight: 700;
+    @include sView {
+      font-size: 12px;
+    }
   }
 }

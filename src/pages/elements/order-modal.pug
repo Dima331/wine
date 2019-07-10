@@ -1,4 +1,4 @@
-.order-modal.modal#ex2
+.order-modal.modal#basket
     .order-modal__content
         .order-modal__title Ваш заказ
         ul.basket-list
@@ -60,18 +60,16 @@
             .basket-totals__row.total-price
                 .basket-totals__text Итого
                 .basket-totals__price 185 BYN
-
             .basket-totals__free-delivery Бесплатная доставка при покупке от 60 BYN
-        
         form.payment-form.payment-form_margin
             .payment-form__title Оформление заказа
             .payment-form__content 
                 .payment-form__col
                     .payment-form__subtitle Личные данные 
                     .payment-form__row.payment-form__row_oneline
-                        .payment-form__input.input-place.input-place_error
+                        .payment-form__input.input-place
                             label(for="fio").input-place__label Имя*
-                            input(type="text" plesholder="Имя").input-place__text#fio
+                            input(type="text" plesholder="Имя").input-place__text.error#fio
                         .payment-form__input.input-place 
                             label(for="tel").input-place__label Телефон*
                             input(type="text" plesholder="Телефон").input-place__text#tel
@@ -122,7 +120,7 @@
                                 label(for="comment").input-place__label Комментарий
                                 input(type="text" placeholder="Комментарий").input-place__text#comment
                 .payment-form__btn
-                    input(type="submit" value="Оформить заказ").btn.btn-registration
+                    button(type="submit").btn.btn-registration Оформить заказ
                     
                     
                     

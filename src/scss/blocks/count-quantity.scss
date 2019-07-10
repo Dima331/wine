@@ -1,25 +1,24 @@
-.count-quantity{
-    color: #A7A7A7;
-    display: flex;
-    font-size: 16px;
-    align-items: center;
+.count-quantity {
+  color: #a7a7a7;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
 
-    .count-quantity__plus,
-    .count-quantity__minus{
-        background-color: inherit;
-        color: #A7A7A7;
-        border: 0;
-        background-color: #fff;
-        cursor: pointer;
-        &:hover{
-            color: rgb(85, 85, 85);
-        }
+  .count-quantity__plus,
+  .count-quantity__minus {
+    background-color: inherit;
+    color: #a7a7a7;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: rgb(85, 85, 85);
     }
-    .count-quantity__number{
-        padding: 0 5px;
-    }
-    .count-quantity__minus{
-        padding-bottom: 3px;
-    }
-    
+  }
+  .count-quantity__number {
+    padding: 0 5px;
+  }
+  .count-quantity__minus {
+    padding-bottom: 3px;
+  }
 }

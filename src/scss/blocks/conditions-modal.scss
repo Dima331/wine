@@ -1,73 +1,68 @@
-// .blocker{
-//   position: fixed;
-//    pointer-events: none;
-// }
-
-   
-
-
-
-
 .modal {
-    display: none;
-    vertical-align: middle;
-    position: relative;
-    max-width: 758px;
-    box-sizing: border-box;
-    width: 758px;
-    background: #fff;
-    padding: 55px 63px;
-    box-shadow: none;
-    border-radius: 0;
-    z-index: 100;
-  
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  max-width: 758px;
+  box-sizing: border-box;
+  width: 758px;
+  background: #fff;
+  padding: 55px 63px;
+  box-shadow: none;
+  border-radius: 0;
+  z-index: 100;
 
-
-    @include mView {
-      width: 100%;
-      padding: 15px;
+  @include mView {
+    width: 100%;
+    padding: 15px;
   }
-  .conditions-modal__title{
+  .conditions-modal__title {
     @include mView {
       padding-right: 40px;
     }
+  }
 }
-}
-.blocker{
+.blocker {
   z-index: 100;
   @media (max-width: 1070px) {
     background-color: rgb(0, 0, 0);
   }
 }
 .modal a.close-modal {
-    position: absolute;
-    display: block;
-    top: 26px;
-    right: 28px;
-    width: 20px;
-    height: 20px;
-    text-indent: -9999px;
-    background-image:none;
-    opacity: 0.3;
-    @include sView {
-      top: 20px;
+  position: absolute;
+  display: block;
+  top: 26px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  background-image: none;
+  opacity: 0.3;
+  @include sView {
+    top: 20px;
     right: 20px;
+    width: 10px;
+    height: 12px;
   }
-    &:before, &:after {
-        position: absolute;
-        left: 10px;
-        content: ' ';
-        height: 20px;
-        width: 1px;
-        background-color: #333;
-      }
-      &:before {
-        transform: rotate(45deg);
-      }
-      &:after {
-        transform: rotate(-45deg);
-      }
-      &:hover {
-        opacity: 1;
-      }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 10px;
+    content: " ";
+    height: 20px;
+    width: 1px;
+    background-color: #333;
+    @include sView {
+      left: 5px;
+      height: 12px;
+    }
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    opacity: 1;
+  }
 }

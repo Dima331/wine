@@ -1,104 +1,124 @@
 .main {
-    color: #04081c;
-    z-index: 6;
-    @include mView {
-        background-image: url("../img/pic/bg-one-mob.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 30px;
-    }
-    .main__container {
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            width: 991px;
-            height: 854px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            top: -33%;
-            right: -32%;
-            top: -169px;
-            right: -377px;
-            background-image: url("../img/pic/bg-section-main.png");
-            @include lView {
-                width: 907px;
-                height: 692px;
-                right: -32%;
-                top: -183px;
-            }
-            @media (max-width: 1150px) {
-                width: 807px;
-            }
-            @include mlView {
-                width: 605px;
-                height: 634px;
-                right: -20%;
-                top: -183px;
-            }
-            @media (max-width: 970px) {
-                right: -28%;
-            }
-            @include mView {
-                display: none;
-            }
-        }
-    }
-    .main__content {
-        width: 51%;
-        @include lView {
-            width: 600px;
-        }
-        @include mView {
-            margin: 0 auto;
-            width: 80%;
-        }
-        @include smView {
-            width: 74%;
-        }
-        @include sView {
-            width: 100%;
-        }
-        p {
-            font-size: 24px;
-            margin-bottom: 40px;
-            line-height: 1.35;
-            @include slView {
-                margin-bottom: 20px;
-            }
-            @include mView {
-                color: #fff;
-            }
-            @include smView {
-                font-size: 18px;
-            }
-            @include ssView {
-                font-size: 14px;
-            }
-        }
-    }
-    .main__title {
-        margin-bottom: 13px;
-        @include mView {
-            color: #fff;
-        }
-    }
-    .main__alcohol {
-        margin-bottom: 50px;
-        @include slView {
-            margin-bottom: 25px;
-        }
-    }
-    .header__btn {
-        text-align: center;
-    }
-    .header__arrow {
-        display: flex;
-        justify-content: center;
-        margin-top: 32px;
+  color: #04081c;
+  z-index: 6;
+  @include mView {
+    background-image: url("../img/pic/bg-one-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 38px;
+  }
+  .main__container {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 991px;
+      height: 854px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: -33%;
+      right: -32%;
+      top: -169px;
+      right: -377px;
+      background-image: url("../img/pic/bg-section-main.png");
+      @include lView {
+        width: 907px;
+        height: 692px;
+        right: -32%;
+        top: -183px;
+      }
+      @media (max-width: 1150px) {
+        width: 807px;
+      }
+      @include mlView {
+        width: 605px;
+        height: 634px;
+        right: -20%;
+        top: -183px;
+      }
+      @media (max-width: 970px) {
+        right: -28%;
+      }
+      @include mView {
         display: none;
-        @include mView {
-            display: flex;
-        }
+      }
     }
+  }
+  .main__content {
+    width: 51%;
+    @include lView {
+      width: 600px;
+    }
+    @include mView {
+      margin: 0 auto;
+      width: 80%;
+    }
+    @include smView {
+      width: 74%;
+    }
+    @include sView {
+      width: 100%;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      line-height: 1.35;
+      @include slView {
+        margin-bottom: 40px;
+      }
+      @include mView {
+        color: #fff;
+      }
+      @include smView {
+        font-size: 18px;
+      }
+      @include ssView {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  }
+  h1 {
+    margin-bottom: 13px;
+    @include mView {
+      color: #ffff;
+    }
+  }
+  .main__alcohol {
+    margin-bottom: 50px;
+    @include slView {
+      margin-bottom: 25px;
+    }
+  }
+  .header__btn {
+    @include mView {
+      text-align: center;
+    }
+  }
+  .header__arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    display: none;
+    @include mView {
+      display: flex;
+    }
+  }
+  .arrow-scroll {
+    animation: bloom ease-out 2s infinite;
+  }
+}
+@keyframes bloom {
+  0% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-5%);
+  }
+  60% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

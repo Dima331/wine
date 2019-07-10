@@ -35,10 +35,8 @@
       margin-bottom: 0;
     }
   }
-  .connection-form__col_error {
-    .connection-form__input {
-      border-bottom: 1px solid #bd0d0d;
-    }
+  .error {
+    border-bottom: 1px solid #bd0d0d;
   }
   .connection-form__input ~ .focus-border {
     position: absolute;
