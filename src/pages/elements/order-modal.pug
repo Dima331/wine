@@ -72,7 +72,7 @@
                             input(type="text" plesholder="Имя").input-place__text.error#fio
                         .payment-form__input.input-place 
                             label(for="tel").input-place__label Телефон*
-                            input(type="text" plesholder="Телефон").input-place__text#tel
+                            input(type="text" plesholder="Телефон" maxlength="13").input-place__text#tel
                 .payment-form__col.payment-form__col_margin
                     .payment-form__subtitle.payment-form__subtitle_type Тип заказа
                     .payment-form__row#radio
@@ -97,7 +97,7 @@
                             label(for="house").input-place__label Дом*
                             input(type="text" placeholder="Дом").input-place__text#house
                         .payment-form__input.input-place.input-place_center
-                            label(for="flat").input-place__label Квартира*
+                            label(for="flat").input-place__label Квартира
                             input(type="text" placeholder="Квартира").input-place__text#flat
                         .payment-form__input.input-place.input-place_center
                             label(for="corps").input-place__label Корпус
@@ -106,7 +106,7 @@
                             label(for="entrance").input-place__label Подъезд
                             input(type="text" placeholder="Подъезд").input-place__text#entrance
                         .payment-form__input.input-place.input-place_center
-                            label(for="floor").input-place__label Этаж*
+                            label(for="floor").input-place__label Этаж
                             input(type="text" placeholder="Этаж").input-place__text#floor
                 .payment-form__col#self-delivery
                     .payment-form__row.payment-form__row_oneline

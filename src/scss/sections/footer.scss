@@ -55,8 +55,9 @@
   }
   .types-payment {
     width: 164px;
+    width: 186px;
     @include slView {
-      width: 20%;
+      width: 22%;
     }
     @include mView {
       width: 40%;
@@ -79,9 +80,9 @@
     font-weight: 800;
     margin-bottom: 8px;
     line-height: 1;
-    @include mView {
-      margin-bottom: 0;
-    }
+    // @include mView {
+    //   margin-bottom: 0;
+    // }
     @include sView {
       font-size: 16px;
     }

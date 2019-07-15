@@ -56,11 +56,13 @@
 }
 textarea {
   display: block;
-  resize: vertical;
-  height: 57px;
   border-radius: 0;
   -webkit-appearance: none;
   box-shadow: none;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 17px;
 }
 input[type="text"] {
   -webkit-appearance: none;
